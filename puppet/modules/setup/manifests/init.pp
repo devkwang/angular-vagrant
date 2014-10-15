@@ -26,7 +26,7 @@ class setup($node_version = "v0.10.32") {
   }
 
   # Global npm modules
-  npm { ["nodemon", "node-inspector"]:
+  npm { ["nodemon", "node-inspector", "yo", "bower","grunt-cli"]:
   }
 
   # Make sure our code directory has proper permissions
