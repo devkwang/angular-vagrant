@@ -27,6 +27,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.network "forwarded_port", guest: 5858, host: 5858
   # Add port-forward for Node Workshop
   config.vm.network "forwarded_port", guest: 1337, host: 1337
+  
+  config.vm.network "forwarded_port", guest: 9000, host: 9000
+  config.vm.network "forwarded_port", guest: 9001, host: 9001
+  config.vm.network "forwarded_port", guest: 35729,host: 35729
+  
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
